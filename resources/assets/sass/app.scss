@@ -5,5 +5,8 @@
 // Variables
 @import "variables";
 
-// Bootstrap
-@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+//  Reset
+@import 'reset';
+
+// Skeleton framework
+@import "node_modules/skeleton-framework/dist/skeleton.min";
