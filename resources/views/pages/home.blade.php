@@ -6,7 +6,7 @@
             1/3
         </div>
         <div class="one-third column">
-            1/3
+            @include('./partials/news')
         </div>
         <div class="one-third column">
             1/3

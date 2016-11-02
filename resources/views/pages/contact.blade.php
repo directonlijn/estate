@@ -50,7 +50,7 @@
         </div>
         <div class="one column"></div>
         <div class="three column">
-            {!! $settings['contact-info'] !!}
+            {!! App\Models\Settings::getSettingByName('contact-info') !!}
         </div>
     </div>
 @stop

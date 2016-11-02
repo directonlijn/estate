@@ -11,7 +11,7 @@
 |
 */
 
-Route::get('/', 'HomeController@getIndex');
+Route::get('/', 'StandardController@getIndex');
 Route::get('users', 'UserController@getIndex');
 Route::get('disclaimer', 'StandardController@getDisclaimer');
 Route::get('contact', 'StandardController@getContact');

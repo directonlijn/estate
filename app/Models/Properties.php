@@ -72,10 +72,10 @@ class Properties extends Model
     protected $guarded = ['id', 'parent_id'];
 
     /**
-     * Get the countries records associated with the continent.
+     * Get the owner record associated with the property.
      */
-    public function countries()
+    public function owner()
     {
-        return $this->hasMany('App\Models\Countries', 'continent_code', 'code');
+        return $this->hasOne('App\Models\Owner', 'id', 'owner_id');
     }
 }

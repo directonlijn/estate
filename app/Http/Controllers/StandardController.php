@@ -8,27 +8,33 @@ use App\Models\Settings as Settings;
 
 class StandardController extends Controller
 {
-    public function GetDisclaimer ()
+    /**
+     *
+     * Shows main page
+     *
+     */
+    public function GetIndex ()
     {
-        $settings = Settings::all();
-
-        $settings2;
-        foreach($settings as $name => $value) {
-            $settings2[$value['name']] = $value['value'];
-        }
-
-        return \View::make('pages/disclaimer')->with('settings', $settings2);
+        return \View::make('pages/home');
     }
 
+    /**
+     *
+     * Shows disclaimer page
+     *
+     */
+    public function GetDisclaimer ()
+    {
+        return \View::make('pages/disclaimer');
+    }
+
+    /**
+     *
+     * Shows contact page
+     *
+     */
     public function GetContact ()
     {
-        $settings = Settings::all();
-
-        $settings2;
-        foreach($settings as $name => $value) {
-            $settings2[$value['name']] = $value['value'];
-        }
-
-        return \View::make('pages/contact')->with('settings', $settings2);
+        return \View::make('pages/contact');
     }
 }
