@@ -4,15 +4,15 @@
         <ul>
             <li>{{ $settings['site-copyright'] }}</li>
             <li><a href="/">Home</a></li>
-            <li><a href="/Nieuws">Nieuws</a></li>
-            <li><a href="/Disclaimer">Disclaimer</a></li>
-            <li><a href="/Contact">Contact</a></li>
+            <li><a href="/nieuws">Nieuws</a></li>
+            <li><a href="/disclaimer">Disclaimer</a></li>
+            <li><a href="/contact">Contact</a></li>
             <li><a href="http://www.mbbl.nl">www.mbbl.nl</a></li>
-            <li><a href="/adobe-reader">Adobe Reader</a></li>
+            <li><a target="_blank" href="http://www.adobe.com/nl/products/reader.html">Adobe Reader</a></li>
             <li><a href="/login">Login</a></li>
         </ul>
     </div>
     <div class="three column">
-        <img src="{{ $settings['img-folder'] . $settings['logo-url'] }}">
+        <img class="footer-logo" src="{{ $settings['img-folder'] . $settings['logo-url'] }}">
     </div>
 </div>

@@ -17,8 +17,6 @@ class HomeController extends Controller
             $settings2[$value['name']] = $value['value'];
         }
 
-        print_r($settings2);
-
         return \View::make('pages/home')->with('settings', $settings2);
     }
 }

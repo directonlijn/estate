@@ -8,7 +8,7 @@
                 @include('./partials/header')
             </header>
             <div class="content container">
-                @yield('./partials/content')
+                @yield('content')
             </div>
             <footer>
                 @include('./partials/footer')

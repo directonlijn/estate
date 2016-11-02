@@ -18,7 +18,9 @@ class SettingsTableSeeder extends Seeder
             ['name' => 'img-folder', 'value' => '/img/'],
             ['name' => 'script-folder', 'value' => '/js/'],
             ['name' => 'logo-url', 'value' => 'logo_mbbl.png'],
-            ['name' => 'background', 'value' => 'bg.jpg']
+            ['name' => 'background', 'value' => 'bg.jpg'],
+            ['name' => 'site-copyright', 'value' => 'MBBL Real Estate © 2016'],
+            ['name' => 'contact-info', 'value' => 'mbbl contact info']
 
         ];
 
