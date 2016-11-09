@@ -54,6 +54,21 @@ p {
   letter-spacing: 0px;
   margin-bottom: 1.25rem; }
 
+.second-color {
+  color: #00684e; }
+
+.third-color {
+  color: #69BE28; }
+
+.font11 {
+  font-size: 11px; }
+
+.font12 {
+  font-size: 12px; }
+
+.font13 {
+  font-size: 13px; }
+
 div, span {
   font-size: 11px; }
 
@@ -82,6 +97,16 @@ header img.header-logo {
   margin-bottom: 40px;
   margin-top: 20px;
   margin-left: 20px; }
+
+.inner-filters .province label {
+  display: inline-block;
+  font-weight: normal; }
+
+.inner-filters .province input {
+  margin-bottom: 0px; }
+
+.inner-filters .one-half.column {
+  padding: 0px; }
 
 footer ul {
   list-style: none;

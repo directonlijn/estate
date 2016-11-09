@@ -64,7 +64,7 @@ class Posts extends Model
      */
     public static function homepageNewsItems()
     {
-        $newsItems = Posts::take(2)->get();
+        $newsItems = Posts::orderBy('created_at','desc')->take(2)->get();
 
         return $newsItems;
     }

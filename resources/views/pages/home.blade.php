@@ -2,13 +2,13 @@
 
 @section('content')
     <div class="row">
-        <div class="one-third column">
-            1/3
+        <div class="three column">
+            @include('partials/filter')
         </div>
         <div class="one-third column">
-            @include('./partials/news')
+            @include('partials/news')
         </div>
-        <div class="one-third column">
+        <div class="five column">
             1/3
         </div>
     </div>

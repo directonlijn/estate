@@ -2,7 +2,7 @@
 <div class="row">
     <div class="nine column">
         <ul>
-            <li>{{ App\Models\Settings::getSettingByName('site-copyright') }}</li>
+            <li>{{ App\Models\Settings::getSettingValueByName('site-copyright') }}</li>
             <li><a href="/">Home</a></li>
             <li><a href="/nieuws">Nieuws</a></li>
             <li><a href="/disclaimer">Disclaimer</a></li>
@@ -13,6 +13,6 @@
         </ul>
     </div>
     <div class="three column">
-        <img class="footer-logo" src="{{ App\Models\Settings::getSettingByName('img-folder') . App\Models\Settings::getSettingByName('logo-url') }}">
+        <img class="footer-logo" src="{{ App\Models\Settings::getSettingValueByName('img-folder') . App\Models\Settings::getSettingValueByName('logo-url') }}">
     </div>
 </div>

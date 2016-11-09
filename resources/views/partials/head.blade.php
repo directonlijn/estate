@@ -1,5 +1,5 @@
 
-    <title>{{ App\Models\Settings::getSettingByName('site-title') }}</title>
+    <title>{{ App\Models\Settings::getSettingValueByName('site-title') }}</title>
     <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
     <meta name="author" content="MBBL">
     <meta name="keywords" content="mbbl, real estate, te koop, mbbl portefeuille, mbbl bedrijfs, kantoorruimte">

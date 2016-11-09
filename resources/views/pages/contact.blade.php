@@ -2,9 +2,10 @@
 
 @section('content')
     <div class="row">
-        <div class="one-third column">
-            1/3
+        <div class="three column">
+            @include('partials/filter')
         </div>
+        <div class="one column"></div>
         <div class="four column">
             <div class="page-title">Contact</div>
 
@@ -50,7 +51,7 @@
         </div>
         <div class="one column"></div>
         <div class="three column">
-            {!! App\Models\Settings::getSettingByName('contact-info') !!}
+            {!! App\Models\Settings::getSettingValueByName('contact-info') !!}
         </div>
     </div>
 @stop

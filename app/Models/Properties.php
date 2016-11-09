@@ -48,6 +48,7 @@ class Properties extends Model
             'province',
             'city',
             'address',
+            'housenumber',
             'zipcode',
             'longitude',
             'latitude',
@@ -77,5 +78,19 @@ class Properties extends Model
     public function owner()
     {
         return $this->hasOne('App\Models\Owner', 'id', 'owner_id');
+    }
+
+    /**
+     * Get a property by id
+     *
+     * @var int
+     * @return property
+     */
+    public static function getPropertyById($id)
+    {
+        $property = Property::where('id', $id)
+                        ->get();
+
+        return (isset($property)) ? $property : false;
     }
 }

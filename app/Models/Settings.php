@@ -55,13 +55,84 @@ class Settings extends Model
      * Get a setting by name
      *
      * @var string
-     * @return newsitems
+     * @return settingValue
      */
-    public static function getSettingByName($name)
+    public static function getSettingValueByName($name)
     {
         $setting = Settings::where('name', $name)
                         ->get();
 
         return (isset($setting[0]->value)) ? $setting[0]->value : false;
+    }
+
+    /**
+     * Get a setting value by id
+     *
+     * @var int
+     * @return setting value
+     */
+    public static function getSettingValueById($id)
+    {
+        $setting = Settings::where('id', $id)
+                        ->get();
+
+        return (isset($setting[0]->value)) ? $setting[0]->value : false;
+    }
+
+    /**
+     * Insert new setting
+     *
+     * @var name string
+     * @var value string
+     * @return saved
+     */
+    public static function addSetting($name, $value)
+    {
+        $setting = new Setting;
+
+        $setting->name = $name;
+        $setting->value = $value;
+
+        $saved = $setting->save();
+
+        return $saved;
+    }
+
+    /**
+     * Update setting value by name
+     *
+     * @var name string
+     * @var value string
+     * @return saved
+     */
+    public static function updateSettingByName($name, $value)
+    {
+        $setting = Setting::where('name', $name)
+                        ->get();
+
+        $setting->value = $value;
+
+        $saved = $setting->save();
+
+        return $saved;
+    }
+
+    /**
+     * Update setting value by name
+     *
+     * @var id int
+     * @var value string
+     * @return saved
+     */
+    public static function updateSettingById($id, $value)
+    {
+        $setting = Setting::where('id', $id)
+                        ->get();
+
+        $setting->value = $value;
+
+        $saved = $setting->save();
+
+        return $saved;
     }
 }

@@ -24,6 +24,7 @@ class CreatePropertiesTable extends Migration
             $table->string('province');
             $table->string('city');
             $table->string('address');
+            $table->integer('housenumber');
             $table->string('zipcode');
             $table->string('longitude');
             $table->string('latitude');
